@@ -1,0 +1,271 @@
+/* Google Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#eef2f7;
+color:#222;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:white;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+position:sticky;
+top:0;
+z-index:100;
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+color:#2563eb;
+}
+
+nav a{
+text-decoration:none;
+margin:0 15px;
+color:#333;
+font-weight:500;
+transition:.3s;
+}
+
+nav a:hover{
+color:#2563eb;
+}
+
+#darkBtn{
+width:45px;
+height:45px;
+border:none;
+border-radius:50%;
+background:#2563eb;
+color:white;
+cursor:pointer;
+font-size:20px;
+}
+
+.resume-builder{
+display:flex;
+justify-content:space-between;
+padding:50px 8%;
+gap:40px;
+align-items:flex-start;
+}
+
+.form-box{
+width:45%;
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.1);
+}
+
+.preview{
+width:50%;
+background:white;
+padding:35px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.1);
+}
+
+.form-box h2{
+margin-bottom:20px;
+color:#2563eb;
+}
+
+.form-box label{
+display:block;
+margin-top:15px;
+margin-bottom:8px;
+font-weight:600;
+}
+
+.form-box input,
+.form-box textarea{
+width:100%;
+padding:14px;
+border:1px solid #ccc;
+border-radius:8px;
+font-size:15px;
+outline:none;
+transition:.3s;
+}
+
+.form-box input:focus,
+.form-box textarea:focus{
+border-color:#2563eb;
+}
+
+.form-box textarea{
+height:110px;
+resize:none;
+}
+
+/* ===========================
+   Profile Photo
+=========================== */
+
+.photo-box{
+text-align:center;
+margin-bottom:25px;
+}
+
+.photo-box img{
+width:150px;
+height:150px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid #2563eb;
+box-shadow:0 10px 20px rgba(0,0,0,.15);
+}
+
+/* ===========================
+   Resume Preview
+=========================== */
+
+.preview h1{
+color:#2563eb;
+font-size:32px;
+margin-bottom:10px;
+}
+
+.preview h2{
+margin-top:25px;
+margin-bottom:10px;
+padding-bottom:5px;
+border-bottom:2px solid #2563eb;
+color:#111827;
+}
+
+.preview p{
+margin:8px 0;
+line-height:1.7;
+word-break:break-word;
+}
+
+.preview hr{
+margin:20px 0;
+border:none;
+height:2px;
+background:#2563eb;
+}
+
+/* ===========================
+   Buttons
+=========================== */
+
+button{
+width:100%;
+padding:15px;
+margin-top:15px;
+border:none;
+border-radius:8px;
+font-size:16px;
+font-weight:600;
+cursor:pointer;
+transition:.3s;
+}
+
+#previewBtn{
+background:#2563eb;
+color:white;
+}
+
+#previewBtn:hover{
+background:#1d4ed8;
+transform:translateY(-3px);
+}
+
+#downloadBtn{
+background:#16a34a;
+color:white;
+}
+
+#downloadBtn:hover{
+background:#15803d;
+transform:translateY(-3px);
+}
+
+/* ===========================
+   Dark Mode
+=========================== */
+
+body.dark{
+background:#111827;
+color:white;
+}
+
+body.dark header{
+background:#1f2937;
+}
+
+body.dark nav a{
+color:white;
+}
+
+body.dark .form-box,
+body.dark .preview{
+background:#1f2937;
+color:white;
+}
+
+body.dark .preview h2{
+color:white;
+}
+
+body.dark input,
+body.dark textarea{
+background:#374151;
+color:white;
+border:1px solid #555;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:900px){
+
+.resume-builder{
+flex-direction:column;
+}
+
+.form-box,
+.preview{
+width:100%;
+}
+
+header{
+flex-direction:column;
+gap:15px;
+padding:20px;
+}
+
+nav{
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.preview h1{
+font-size:28px;
+}
+
+.photo-box img{
+width:120px;
+height:120px;
+}
+
+}
